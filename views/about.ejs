@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+                <a href="#!"><img src="img/logo1.png" alt="Ford Expe" srcset="" class="nav-logo"></a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="/index">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About cars</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+    </header>
+
+    <article>
+
+        <div class="heading">
+            <h1 class="main-heading">VIEW THE CARS </h1>
+        </div>
+
+        <div class="article">
+            <div class="img-text">
+                <div class="image">
+                    <img src="img/1-1.jpg" alt="Ford Expedition" srcset="" class="image-1">
+                </div>
+                <div class="text">
+                  <h2>Ford Expedition </h2>
+                  <h5>9 Models to select from $50,595 - $76,150</h5>
+                    <p>
+                      The 2021 Ford Expedition is available in five trim levels: XL, XLT, Limited, King Ranch and Platinum. The extended-length Expedition Max is available on all but the base XL, offering more cargo space than the standard model. All Expeditions are powered by a 3.5-liter turbocharged V6 engine. For most trims it makes 375 hp and 470 lb-ft of torque. The Platinum trim gets a slight bump to 400 hp and 480 lb-ft. The engine is paired with a 10-speed automatic and rear-wheel drive. Four-wheel drive is optional across the board.                    </p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="image">
+                    <img src="img/2-2.jpg" alt="" srcset="Ford Mustang" class="image-1">
+                </div>
+                <div class="text">
+                  <h2>Ford Mustang </h2>
+                  <h5>4 Models to select from $26,670  - $72,900</h5>
+                    <p>
+                    <p>
+                      The 2021 Ford Mustang is available in five main trim levels: EcoBoost, EcoBoost Premium, GT, GT Premium and Mach 1. The standard body style is a two-door coupe. A folding fabric-top convertible version is also offered in all but the Mach 1 trim. Convertibles add more security features and active noise cancellation, but the rear seatbacks are not foldable. There's also the Shelby GT500 that's such a giant leap forward in performance                    </p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="image">
+                    <img src="img/3-3.jpg" alt="" srcset="Ford F150" class="image-1">
+                </div>
+                <h2>Ford F150 </h2>
+                <h5>8 Models to select from $29,290  - $73,105</h5>
+                <div class="text">
+                    <p>
+                      The 2021 Ford F-150 is offered in six trim levels: XL, XLT, Lariat, King Ranch, Platinum and Limited. There are three cab styles — regular, SuperCab (extended) and SuperCrew (crew cab) — and three bed lengths, depending on cab style. Along with the many trim levels and cab styles, the F-150 offers six available powertrains. All are paired to a 10-speed automatic transmission with either rear- or four-wheel drive.</p>
+                </div>
+            </div>
+
+            <div class="img-text">
+                <div class="image">
+                    <img src="img/4-4.jpg" alt="Ford Explorer" srcset="" class="image-1">
+                </div>
+                <div class="text">
+                  <h2>Ford Explorer </h2>
+                  <h5>8 Models to select from $33,245  - $54,115</h5>
+                    <p>
+                      The 2022 Ford Explorer SUV is a midsize SUV with three rows of seating. It comes in eight trim levels: base, XLT, Limited, ST-Line, Timberline, ST, King Ranch and Platinum. Most models come standard with a turbocharged four-cylinder engine, though a hybrid V6 powertrain and a high-performance V6 are found on higher trims                    </p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+<section id="wrapper">
+    <div class="box">
+      <div>
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div>
+          </div>
+      <div>
+      <textarea type="text" class="input" placeholder="Your Comment Here" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='btn-box' type="submit">Your Comment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+        
+            <a href="#!"><img src="img/logo1.png" alt="" srcset="" class="nav-logo"></a>
+          
+        <p>Electrifying a New Generation
+            Join the revolution of all-electric iconic vehicles designed with the passion and exhilaration you’ve come to expect from the visionaries and engineers at Ford. Discover more on how Ford is creating an electrifying union of clean, cutting-edge technology and exciting modern design.</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/ford/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Ford?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/user/fordvideo1"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.ford.com/"><i class="fas fa-car"></i>></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>    <br>&copy; 2021, Munayem ahad <br>  </p>
+                <div class="footer-menu">
+                  <ul class="f-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                  </ul>
+                </div>
+    </div>
+
+</footer>
+ 
+
+    <script>
+        $(document).ready(function(){ 
+ 
+    $(".btn-box").on('click', function(){
+    $(".comment").addClass("afterText");
+  });
+  $("textarea").on('keyup.enter', function(){
+    $(".comment").addClass("afterText");
+  });
+  });
+ 
+new Vue({
+    el: "#wrapper",
+    data:{
+      newItem: '',
+      item: [],
+    },
+    methods:{
+      addItem  (){
+      this.item.push(this.newItem);
+        this.newItem = "";
+      }
+  }
+ 
+  });
+</script>
+
+    <script src="js/jquery.min.js"></script>
+    
+<script>
+    
+	(function($) { 
+  $(function() { 
+
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.navbar-dropdown').hide();
+    });
+  }); 
